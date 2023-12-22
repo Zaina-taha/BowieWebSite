@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bowie | Pet Food Shop | Shopify Theme
+            – Bowie </title>
+        <link rel="shortcut icon" href="assets/img/favicon_2_16x16.png" type="image/png">
+        <link rel="stylesheet" href="vendor/bootstarp/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/fontawesome/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.min.css">
+        <link rel="stylesheet" href="assets/css/media.min.css">
+
+    </head>
+
+    <body>
+        <div class="scroll-to-up position-fixed d-flex justify-content-center align-items-center bg-main-color text-white rounded-circle z-3 invisible opacity-0">
+            <i class="fa-solid fa-arrow-up "></i>
+        </div>
+
+        <div class="search-icon container d-flex d-none">
+            <div class="contact-input text-center position-relative py-3 w-S ">	
+                <input class="form-control rounded-pill sub-in-S border-0 " placeholder="Search our Stores" type="text" >
+                <button type="submit" class="dt-sc-btn mt-3 mb-5 border-0 rounded-pill bg-main-color text-white  btn-submit position-absolute sub-search " name="subscribe" value="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="exit-search mt-3 ms-5">
+                <i class="fa-solid fa-xmark"></i>
+            </div>              
+        </div>
+
+
+        <div class="subscribe-popup__wrapper " id="snow-conrainer">  
+            <div class="subscribe-popup">
+              <div class="subscribe-popup__main text-center position-relative ">
+                <div class="d-flex exit bg-main-color text-white rounded-circle d-flex justify-content-center align-items-center position-absolute ">
+                    <i class="fa-solid fa-xmark" ></i>
+                        </div>
+                <div class="subscribe-popup_title">
+                    <h1> Get to know the latest offers</h1>
+                   </div>
+                <div class="subscribe-popup__description">Subscribe and get notified at first on the latest update and offers!
+                </div>
+                <div class="contact-input text-center position-relative pt-3">	
+                    <input class="form-control rounded-pill sub-in border-0" placeholder="Enter your Email id" type="text" >
+                    <button type="submit" class="dt-sc-btn mt-3 mb-5 border-0 rounded-pill bg-main-color text-white px-4 py-2 btn-submit position-absolute sub " name="subscribe" value=""><span>Subscribe</span>
+                        <i class="fa-solid fa-envelope"></i></button>
+                  </div>
+                  <div class="popup-span">
+                  <span >We do not spam</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="siteAnnouncement py-2" id="siteAnnouncement">
+            <div class="container">
+                <div class="d-flex exit-bar bg-main-color text-white rounded-circle d-flex justify-content-center align-items-center position-absolute ">
+                    <i class="fa-solid fa-xmark" ></i>
+                        </div>
+              <p class="pt-2">Long Weekend Sale Up To 50% OFF
+                <a class="text-decoration-none  shop-now" href="/collections">Shop Now
+                </a></p>
+            </div>
+          </div>
+
+        <nav class="navbar d-flex bg-main-color">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo_300x300.png"
+                        alt="Bowie pet food shop">
+                </a>
+
+                <div
+                    class="d-flex align-items-centre justify-content-end ">
+                    <a class="d-flex mx-2 text-decoration-none text-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <i class="fa-solid fa-bars px-2 mt-1"></i>
+                        <span class>Menu</span>
+                    </a>
+                    <div class="offcanvas offcanvas-end w-25" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pages</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link" href="about.html">About</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                    <select
+                        class=" w-10 mx-2 d-flex border-0 bg-main-color sel-hover "
+                        aria-label="Default select example">
+                        <option selected>USD</option>
+                    </select>
+                    <a class="d-flex mx-2 mt-1 text-decoration-none hov-brown " onclick="DisplayBar()" id="searchBar">
+                        <i class="fa-solid fa-magnifying-glass "></i>
+                    </a>
+                    <a class="d-flex mx-2 mt-1 text-white hov-brown" href="account.html">
+                        <i class="fa-solid fa-user "></i>
+                    </a>
+                    <a class="d-flex mx-2 mt-1  position-relative hov-brown " data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar1" aria-controls="offcanvasNavbar1">
+                        <i class="fa fa-shopping-bag  "></i>
+                        <span class="count hov-span">0</span>
+                    </a>
+                    <div class="offcanvas offcanvas-end w-25" tabindex="-1" id="offcanvasNavbar1" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header border-bottom">
+                          <h5 class="offcanvas-title canvas-p " id="offcanvasNavbarLabel">Your Cart</h5>
+                          <button type="button" class="btn-close bg-main-color opacity-100 btn-close-canvas" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div class="text-centre ">
+                            <p>Your cart is currently empty.</p>
+                          </div>
+                          <div class="text-center">
+                            <button type="submit" class="dt-sc-btn mt-3 mb-5 border-0 rounded-pill bg-main-color text-white px-5 py-2 btn-submit " name="subscribe" value=""><span>Continue Shopping</span></button>   
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="header  position-relative">
+            <div id="carouselExample" class="carousel slide position-relative">
+                <div class="carousel-inner">
+                    <div class="carousel-item active position-relative ">
+                        <img src="assets/img/pet-sli-3.jpg"
+                            class="d-block w-100" alt="cat food">
+                        <div class="desc-slide1 position-absolute ">
+                            <h2 class="py-1"> A Great Meal</h1>
+                            <h1 class="py-2 pb-4"> With a Great Deal </h1>
+                            <h3 class="pt-4 pb-5">
+                                BUY ONE GET ONE
+                            </h3>
+                            <a href="#"
+                                class="text-decoration-none rounded-pill">
+                                <span class>Shop Now</span>
+                                <i class="fa-solid fa-paw "></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item position-relative">
+                        <img
+                            src="assets/img/pet-sli-2_2000x_32aaf247-3c4a-4a73-b81d-8e7b3a0f8c15.jpg"
+                            class="d-block w-100"
+                            alt="food cat">
+                        <div class="desc-slide2 position-absolute ">
+                            <span>
+                                <strong>30%</strong>
+                                <br>
+                                OFF
+                            </span>
+                        </div>
+                        <div class="desc2-slide2 position-absolute ">
+                            <h3 class="pb-5 pt-3">
+                                ON SEA FOODS
+                            </h3>
+                            <a href="#"
+                                class="text-decoration-none rounded-pill">
+                                <span class>Shop Now</span>
+                                <i class="fa-solid fa-paw "></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets/img/pet-sli-1_2000x_7ded4bc4-1b30-43ab-ac6d-31662edf306b.jpg"
+                            class="d-block w-100"
+                            alt="food cat">
+                        <div class="desc-slide3 position-absolute ">
+                            <span>
+                                <strong>30%</strong>
+                                <br>
+                                OFF
+                            </span>
+                        </div>
+                        <div class="desc2-slide3 position-absolute ">
+                            <h3 class="pb-5 pt-3">
+
+                                ON DIET FOODS
+
+                            </h3>
+                            <a href="#"
+                                class="text-decoration-none rounded-pill">
+                                <span class>Shop Now</span>
+                                <i class="fa-solid fa-paw "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev care opacity-100 swiper-prev   "
+                    type="button"
+                    data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next swiper-next opacity-100   "
+                    type="button"
+                    data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </header>
+
+        <section class="pb-5 js" >
+            <div class="container-fluid ">
+                <div class="heading text-center pt-5 mt-5 w-100">
+                    <p>Vel elit scelerisque mauris pellentesque</p>
+                    <div class="back-img w-100  pt-1 ">
+                        <h4>Pet Care - Caring</h4>
+                    </div>
+                </div>
+                <div class="row gap-4 d-flex justify-content-center pb-5 mb-5">
+                    <div class="col-lg-2 col-md-5 ">
+                        <div class="img-edit">
+                            <img src="assets/img/img-1_360x.jpg" alt="dog">
+                        </div>
+                        <div class="position-relative">
+                            <button
+                                class="rounded-pill py-2 px-4  btn-pic position-absolute border-0 ">Labrador</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-5  ">
+                        <div class="img-edit">
+                            <img src="assets/img/img-5_360x.jpg" alt="dog">
+
+                        </div>
+                        <div class="position-relative">
+                            <button
+                                class="rounded-pill btn-pic btn-pic1 position-absolute border-0 ">Munchkin
+                                Cat</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-5  ">
+                        <div class="img-edit">
+                            <img src="assets/img/img-2_360x.jpg" alt="dog">
+
+                        </div>
+                        <div class="position-relative">
+                            <button
+                                class="rounded-pill py-2 px-4 btn-pic btn-pic2 position-absolute border-0 ">Rabbit</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-5  ">
+                        <div class="img-edit">
+                            <img src="assets/img/img-3_360x.jpg" alt="dog">
+
+                        </div>
+                        <div class="position-relative">
+                            <button
+                                class="rounded-pill py-2 btn-pic3 position-absolute border-0 ">Macaw
+                                parrot</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-5  ">
+                        <div class="img-edit">
+                            <img src="assets/img/img-4_360x.jpg" alt="dog">
+
+                        </div>
+                        <div class="position-relative">
+                            <button
+                                class="rounded-pill py-2 px-4  btn-pic4 position-absolute border-0 ">Bengal
+                                Cat</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+            <div class="row g-0">
+                <div class="col-lg-6   position-relative nutrition">
+                    <img src="assets/img/img-6_1512x.jpg" alt="pet dog"
+                        class="pet1">
+                    <div class="diet position-absolute py-3 px-4 text-end">
+                        <h4 class="pb-3">Nutritious Diet</h4>
+                        <p class>Sed turpis tincidunt id aliquet risus.
+                            Tellus orci ac auctor augue mauris augue neque
+                            gravida in. Molestie at
+                            elementum eu facilisis. Viverra justo nec
+                            ultrices dui sapien eget mi proin sed. Quisque
+                            sagittis purus sit amet.</p>
+                        <a href="#"
+                            class="text-decoration-none bg-main-color text-white rounded-pill px-3 py-2">Shop
+                            now</a>
+                    </div>
+                </div>
+                <div class="col-lg-6   position-relative nutrition">
+                    <img src="assets/img/img-7_1512x.jpg" alt="pet dog"
+                        class="pet1">
+                    <div class="diet position-absolute py-3 px-4 text-end">
+                        <h4 class="pb-3">Love & Care</h4>
+                        <p class>Nulla malesuada pellentesque elit
+                            eget gravida cum sociis natoque. Mauris ultrices
+                            eros in cursus
+                            turpis massa. Volutpat maecenas volutpat blandit
+                            aliquam etiam erat velit scelerisque in. Proin
+                            fermentum leo vel.</p>
+                        <a href="#"
+                            class="text-decoration-none bg-main-color text-white rounded-pill px-3 py-2">Shop
+                            now</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mb-5 pb-5">
+            <div class="container-fluid">
+                <div class="heading text-center pt-5 mt-5 w-100">
+                    <p>Bibendum sodales, augue velit cursus nunc.
+                    </p>
+                    <div class="back-img w-100  pt-1 ">
+                        <h4 class="text-main-color">Choose Your Taste</h4>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav nav-tabs d-flex justify-content-center text-decoration-none border-0 mb-4" id="myTab" role="tablist">
+                <li class="nav-item " role="presentation">
+                  <button class="nav-link  active rounded-pill px-4 me-2" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">New</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link rounded-pill px-4" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Best</button>
+                </li>
+               
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    <div id="carouselExample1" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">       
+        
+           <div class="container  ">
+            <div class="row">
+               
+                <div class="col-lg-4 col-md-6 col-sm-6 1 w-media  ">
+                <div
+                    class=" img-food position-relative ">
+                    <img src="assets/img/product3.jpg"
+                        alt="dry food cat" class>
+                </div>
+            
+                <div
+                    class="back-food position-absolute top-0 bottom-0 col-lg-4 col-sm-6 end-0 d-flex flex-column justify-content-center align-content-center">
+                    <h4 class>
+                        <a href="#" class="text-decoration-none">Adult
+                            Dogs Pedigren</a>
+                    </h4>
+                    <div class="my-3">
+                        <span class="back-food1">$350.00<span>
+                            </div>
+                            <div class>
+                                <button
+                                    class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                    <i aria-hidden="true"
+                                        class="fa fa-shopping-bag px-2"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="col-lg-4 col-sm-6 col-md-6 w-media position-relative 2">
+                        <div
+                            class="img-food ">
+                            <img src="assets/img/product19.jpg"
+                                alt="dry food cat" class>
+                        </div>
+                    
+                        <div
+                            class="back-foodC position-absolute top-0 bottom-0 col-lg-4 col-sm-6 end-0 d-flex flex-column justify-content-center align-content-center">
+                            <h4 class>
+                                <a href="#" class="text-decoration-none">Cats Formula Food</a>
+                            </h4>
+                            <div class="my-3">
+                                <span class="back-food1">$399.00<span>
+                                    </div>
+                                    <div class>
+                                        <button
+                                            class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                            <i aria-hidden="true"
+                                                class="fa fa-shopping-bag px-2"></i>
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+        
+        
+                            <div class="col-lg-4 d-none d-lg-block w-media position-relative 2">
+                                <div
+                                    class="img-food ">
+                                    <img src="assets/img/product17.jpg"
+                                        alt="dry food cat" class>
+                                </div>
+                            
+                                <div
+                                    class="back-foodD position-absolute top-0 bottom-0 col-lg-4 col-lg-6  col-sm-6 end-0 d-flex flex-column justify-content-center align-content-center">
+                                    <h4 class>
+                                        <a href="#" class="text-decoration-none">Chew Stick Medium</a>
+                                    </h4>
+                                    <div class="my-3">
+                                        <span class="back-food1">$499.00<span>
+                                            </div>
+                                            <div class>
+                                                <button
+                                                    class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                                    <i aria-hidden="true"
+                                                        class="fa fa-shopping-bag px-2"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                    </div>
+                        </div>
+        
+                          </div>
+        
+                          <div class="carousel-item">
+                            
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 w-media 1">
+                <div
+                    class=" img-food position-relative ">
+                    <img src="assets/img/product16.jpg"
+                        alt="dry food cat" class>
+                </div>
+            
+                <div
+                    class="back-foodE position-absolute top-0 bottom-0 col-lg-4 col-sm-6 end-0 d-flex flex-column justify-content-center align-content-center">
+                    <h4 class>
+                        <a href="#" class="text-decoration-none">Cat Chicken Food</a>
+                    </h4>
+                    <div class="my-3">
+                        <span class="back-food1">$599.00<span>
+                            </div>
+                            <div class>
+                                <button
+                                    class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                    <i aria-hidden="true"
+                                        class="fa fa-shopping-bag px-2"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="col-lg-4 col-md-6 col-sm-6 w-media position-relative 2">
+                        <div
+                            class="img-food ">
+                            <img src="assets/img/product22.jpg"
+                                alt="dry food cat" class>
+                        </div>
+                    
+                        <div
+                            class="back-foodF position-absolute top-0 bottom-0 col-lg-4 col-sm-6 end-0 d-flex flex-column justify-content-center align-content-center">
+                            <h4 class>
+                                <a href="#" class="text-decoration-none">Cats Formula Food</a>
+                            </h4>
+                            <div class="my-3">
+                                <span class="back-food1">$399.00<span>
+                                    </div>
+                                    <div class>
+                                        <button
+                                            class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                            <i aria-hidden="true"
+                                                class="fa fa-shopping-bag px-2"></i>
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+        
+        
+                            <div class="col-lg-4 col-md-6 d-none d-lg-block  position-relative 2">
+                                <div
+                                    class="img-food ">
+                                    <img src="assets/img/product21.jpg"
+                                        alt="dry food cat" class>
+                                </div>
+                            
+                                <div
+                                    class="back-foodG position-absolute top-0 bottom-0 col-lg-4  end-0 d-flex flex-column justify-content-center align-content-center">
+                                    <h4 class>
+                                        <a href="#" class="text-decoration-none">Cats ocean Fish</a>
+                                    </h4>
+                                    <div class="my-3">
+                                        <span class="back-food1">$300.00<span>
+                                            </div>
+                                            <div class>
+                                                <button
+                                                    class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                                    <i aria-hidden="true"
+                                                        class="fa fa-shopping-bag px-2"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                    </div>
+                        </div>
+                          </div>
+                          <div class="carousel-item">
+        
+                            <div class="container">
+                                <div class="row">
+                                   
+                                    <div class="col-lg-4 col-md-6 col-md-6   col-sm-6 w-media 1">
+                                    <div
+                                        class=" img-food position-relative ">
+                                        <img src="assets/img/product14.jpg"
+                                            alt="dry food cat" class>
+                                    </div>
+                                
+                                    <div
+                                        class="back-foodH position-absolute top-0 bottom-0 col-lg-4   col-sm-6 end-0 d-flex flex-column justify-content-center align-content-center">
+                                        <h4 class>
+                                            <a href="#" class="text-decoration-none">Chew Stick Dogs</a>
+                                        </h4>
+                                        <div class="my-3">
+                                            <span class="back-foodH">$300.00<span>
+                                                </div>
+                                                <div class>
+                                                    <button
+                                                        class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                                        <i aria-hidden="true"
+                                                            class="fa fa-shopping-bag px-2"></i>
+                                                        Add to Cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                            
+                                        <div class="col-lg-4 col-md-6 col-sm-6 w-media  position-relative 2">
+                                            <div
+                                                class="img-food ">
+                                                <img src="assets/img/product22.jpg"
+                                                    alt="dry food cat" class>
+                                            </div>
+                                        
+                                            <div
+                                                class="back-foodI position-absolute top-0 bottom-0 col-lg-4   col-sm-6 end-0 d-flex flex-column justify-content-center align-content-center">
+                                                <h4 class>
+                                                    <a href="#" class="text-decoration-none">Complete Formula Dogs</a>
+                                                </h4>
+                                                <div class="my-3">
+                                                    <span class="back-food1">$300.00<span>
+                                                        </div>
+                                                        <div class>
+                                                            <button
+                                                                class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                                                <i aria-hidden="true"
+                                                                    class="fa fa-shopping-bag px-2"></i>
+                                                                Add to Cart
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                            
+                                                
+                                        </div>
+                                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="text-center mt-4">
+                        <a class="text-decoration-none " type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                            <i class="fa-solid fa-paw prev-icon "></i>
+                        </a>
+                        <a class="text-decoration-none" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                            <i class="fa-solid fa-paw fa-flip-vertical next-icon "></i>
+                        </a>
+                    </div>
+                      </div>
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">    
+                <div id="carouselExample2" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">       
+    
+       <div class="container">
+        <div class="row">
+           
+            <div class="col-lg-4  col-sm-6 w-media  1">
+            <div
+                class=" img-food position-relative ">
+                <img src="assets/img/product1.jpg"
+                    alt="dry food cat" class>
+            </div>
+        
+            <div
+                class="back-foodA1 position-absolute top-0 bottom-0 col-lg-4  col-sm-6 end-0 d-flex flex-column justify-content-center align-content-center">
+                <h4 class>
+                    <a href="#" class="text-decoration-none">Pedigren Milk & Chicken</a>
+                </h4>
+                <div class="my-3">
+                    <span class="back-food1">$300.00<span>
+                        </div>
+                        <div class>
+                            <button
+                                class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                <i aria-hidden="true"
+                                    class="fa fa-shopping-bag px-2"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col-lg-4 col-sm-6 w-media  position-relative 2">
+                    <div
+                        class="img-food ">
+                        <img src="assets/img/product2.jpg"
+                            alt="dry food cat" class>
+                    </div>
+                
+                    <div
+                        class="back-foodC1 position-absolute top-0 bottom-0 col-lg-4 col-sm-6 end-0 d-flex flex-column justify-content-center align-content-center">
+                        <h4 class>
+                            <a href="#" class="text-decoration-none">Pedigren Senior</a>
+                        </h4>
+                        <div class="my-3">
+                            <span class="back-food1">$350.00<span>
+                                </div>
+                                <div class>
+                                    <button
+                                        class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                        <i aria-hidden="true"
+                                            class="fa fa-shopping-bag px-2"></i>
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="col-lg-4 col-sm-6 d-none d-lg-block  position-relative 2">
+                            <DIV class="position-absolute btn-sale">
+                                <button class="px-3 py-1 bg-main-color rounded-pill border-0">
+                                   Sale
+                                </button>
+                               </DIV>
+                            <div
+                                class="img-food ">
+                                <img src="assets/img/product6.jpg"
+                                    alt="dry food cat" class>
+                            </div>
+                            
+                            <div
+                                class="back-foodD1 position-absolute  top-0 bottom-0 col-lg-4  col-sm-6 end-0 d-flex flex-column justify-content-center align-content-center">
+                                <DIV class="position-absolute btn-sale1">
+                                    <button class="px-3 py-1 bg-main-color rounded-pill border-0">
+                                       Sale
+                                    </button>
+                                   </DIV>
+                                <h4 class>
+                                    <a href="#" class="text-decoration-none">Pedigren Meat</a>
+                                </h4>
+                                <div class="my-3">
+                                    <span class="back-food1">$600.00<span>
+                                        </div>
+                                        <div class>
+                                            <button
+                                                class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                                <i aria-hidden="true"
+                                                    class="fa fa-shopping-bag px-2"></i>
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+                    </div>
+    
+                      </div>
+    
+                      <div class="carousel-item">
+                        
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4  col-sm-6 w-media 1">
+            <div
+                class=" img-food position-relative ">
+                <img src="assets/img/product26.jpg"
+                    alt="dry food cat" class>
+            </div>
+        
+            <div
+                class="back-foodE1 position-absolute top-0 bottom-0 col-lg-4 col-sm-6 end-0 d-flex flex-column justify-content-center align-content-center">
+                <h4 class>
+                    <a href="#" class="text-decoration-none">Pedigren Fish Flavor</a>
+                </h4>
+                <div class="my-3">
+                    <span class="back-food1">$450.00<span>
+                        </div>
+                        <div class>
+                            <button
+                                class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                <i aria-hidden="true"
+                                    class="fa fa-shopping-bag px-2"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col-lg-4  col-sm-6 w-media position-relative 2">
+                    <div
+                        class="img-food ">
+                        <img src="assets/img/product5_c5fd7af2-6431-433f-818e-a9ae8297af22.jpg"
+                            alt="dry food cat" class>
+                    </div>
+                
+                    <div
+                        class="back-foodF1 position-absolute top-0 bottom-0 col-lg-4 col-sm-6 end-0 d-flex flex-column justify-content-center align-content-center">
+                        <h4 class>
+                            <a href="#" class="text-decoration-none">Pedigren dry food</a>
+                        </h4>
+                        <div class="my-3">
+                            <span class="back-food1">$350.00<span>
+                                </div>
+                                <div class>
+                                    <button
+                                        class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                        <i aria-hidden="true"
+                                            class="fa fa-shopping-bag px-2"></i>
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="col-lg-4 col-sm-6 d-none d-lg-block  position-relative 2">
+                            <div
+                                class="img-food ">
+                                <img src="assets/img/product21.jpg"
+                                    alt="dry food cat" class>
+                            </div>
+                        
+                            <div
+                                class="back-foodG1 position-absolute top-0 bottom-0 col-lg-4 col-sm-6 end-0 d-flex flex-column justify-content-center align-content-center">
+                                <h4 class>
+                                    <a href="#" class="text-decoration-none">Pedigren Vegetable</a>
+                                </h4>
+                                <div class="my-3">
+                                    <span class="back-food1">$700.00<span>
+                                        </div>
+                                        <div class>
+                                            <button
+                                                class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                                <i aria-hidden="true"
+                                                    class="fa fa-shopping-bag px-2"></i>
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+                    </div>
+                      </div>
+                      <div class="carousel-item">
+    
+                        <div class="container">
+                            <div class="row">
+                               
+                                <div class="col-lg-4 col-sm-6 w-media 1">
+                                <div
+                                    class=" img-food position-relative ">
+                                    <img src="assets/img/product4.jpg"
+                                        alt="dry food cat" class>
+                                </div>
+                            
+                                <div
+                                    class="back-foodH1 position-absolute top-0 bottom-0 col-lg-4 col-sm-6 end-0 d-flex flex-column justify-content-center align-content-center">
+                                    <h4 class>
+                                        <a href="#" class="text-decoration-none">Pedigren Meat & Vegetables</a>
+                                    </h4>
+                                    <div class="my-3">
+                                        <span class="back-foodH">$600.00<span>
+                                            </div>
+                                            <div class>
+                                                <button
+                                                    class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                                    <i aria-hidden="true"
+                                                        class="fa fa-shopping-bag px-2"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                        
+                                    <div class="col-lg-4  col-sm-6 w-media  position-relative 2">
+                                        <div
+                                            class="img-food ">
+                                            <img src="assets/img/product7_f1c175ff-613c-4344-8a0e-cddb640a0db6.jpg"
+                                                alt="dry food cat" class>
+                                        </div>
+                                    
+                                        <div
+                                            class="back-foodI1 position-absolute top-0 bottom-0 col-lg-4 col-sm-6 end-0 d-flex flex-column justify-content-center align-content-center">
+                                            <h4 class>
+                                                <a href="#" class="text-decoration-none">Pedigren Chicken</a>
+                                            </h4>
+                                            <div class="my-3">
+                                                <span class="back-food1">$300.00<span>
+                                                    </div>
+                                                    <div class>
+                                                        <button
+                                                            class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                                                            <i aria-hidden="true"
+                                                                class="fa fa-shopping-bag px-2"></i>
+                                                            Add to Cart
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                        
+                                            
+                                    </div>
+                                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="text-center mt-4">
+                    <a class="text-decoration-none " type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                        <i class="fa-solid fa-paw prev-icon "></i>
+                    </a>
+                    <a class="text-decoration-none" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                        <i class="fa-solid fa-paw fa-flip-vertical next-icon "></i>
+                    </a>
+                </div>
+                  </div></div>
+              </div>
+
+
+
+        </section>
+
+        <section class="ccare"  >
+            
+            <div class="caring position-relative ">    
+                <div class="overlay position-absolute top-0 start-0 bottom-0 end-0 pb-4">
+                    <div class="row w-100 try">
+                        <div class="col-lg-6 "></div>
+                        <div class="col-lg-6 ">
+                            <div class="care-content text-white pe-5 pt-5 mt-5">
+                                <h4 class="pb-3">Caring pets gives happy &amp; fun</h4>
+                                <h6 class="pb-3">Expose your love</h6>
+                                <p class="">Sed fringilla mauris
+                                     sit amet nibh. Donec sodales sagittis magna. Sed consequat,
+                                      leo eget bibendum sodales, uis leo. Sed fringilla mauris sit
+                                       amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.uis leo
+                                    . Sed fringilla mauris sit amet nibh.
+                                     Donec sodales sagittis magna. Sed consequat</p>
+        
+                            </div>
+                            <div class="row pt-2 pb-4 ">
+                                <div class="col-lg-6  care-img d-flex align-items-center">
+                                    <div>
+                                        <img src="assets/img/img-15_200x.jpg" class="rounded-circle" alt="dog">
+                                    </div>
+                                    <div class=" ms-3">
+                                        <h5>Affenpinscher</h5>
+                                    </div>
+                                    <div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  care-img d-flex align-items-center">
+                                    <div>
+                                        <img src="assets/img/img-14_200x.jpg" class="rounded-circle" alt="dog">
+                                    </div>
+                                    <div class=" ms-3">
+                                        <h5>Bengal Cat
+                                        </h5>
+                                    </div>
+                                    <div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pb-4 ">
+                                <div class="col-lg-6  care-img d-flex align-items-center">
+                                    <div>
+                                        <img src="assets/img/img-16_200x.jpg" class="rounded-circle" alt="dog">
+                                    </div>
+                                    <div class=" ms-3">
+                                        <h5>
+                                            Chicken</h5>
+                                    </div>
+                                    <div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  care-img d-flex align-items-center">
+                                    <div>
+                                        <img src="assets/img/img-13_200x.jpg" class="rounded-circle" alt="dog">
+                                    </div>
+                                    <div class=" ms-3">
+                                        <h5>
+                                            Rabbit</h5>
+                                    </div>
+                                    <div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6  care-img d-flex align-items-center">
+                                    <div>
+                                        <img src="assets/img/img-17_200x.jpg" class="rounded-circle" alt="dog">
+                                    </div>
+                                    <div class=" ms-3">
+                                        <h5>
+                                            LoveBird</h5>
+                                    </div>
+                                    <div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  care-img d-flex align-items-center">
+                                    <div>
+                                        <img src="assets/img/img-18_200x.jpg" class="rounded-circle" alt="dog">
+                                    </div>
+                                    <div class=" ms-3">
+                                        <h5>
+                                            Macaw</h5>
+                                    </div>
+                                    <div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+        
+
+            </div>
+        </section>
+
+
+        <section class="position-relative h-puppy">
+            <div id="carouselExample22" class="carousel slide info ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row flex-grow-1 ">
+                        <div class="col-lg-6 col-md-6   cute ">
+                        </div>
+                        <div class="col-lg-6 col-md-6  pt-5 ps-5 delete-p">
+                            <div class="text-left ps-5">
+                            <h4 class="ps-5 ">
+                            <a href="#" class="text-decoration-none"> Three little cute puppy</a>
+                           </h4>
+                           <div class="d-flex position-relative font pt-3">
+                           <p class="ps-5 user">
+                            <i class="fa-regular fa-user rounded-circle"></i>                            
+                            <span>by Ram M</span></p>
+                            <div class="cute-content"></div>
+                            <div class="user1">
+                            <p class="ps-4">  
+                                <i class="fa-solid fa-calendar-days"></i>                  
+                                <time>August 2, 2018</time>
+                              </p>
+                            </div>
+                        </div>
+                        <div class="px-5 user2">
+                            <p>
+                              Ruis curabitur ligula sapien, tincidunt non,
+                               euismod vitae, posuere imperdiet, leo. Maecenas 
+                               malesuada. Praesent congue erat at massa. Sed cursus t...
+                            </p>
+                          </div>
+                          <div class="ps-5">
+                            <button class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                               Read more
+                            </button>
+                          </div>
+                        </div>
+                       </div>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row flex-grow-1">
+                        <div class="col-lg-6 col-md-6  cute1 ">
+                        </div>
+                        <div class="col-lg-6 col-md-  pt-5 ps-5 delete-p">
+                            <div class="text-left ps-5">
+                            <h4 class="ps-5 ">
+                            <a href="#" class="text-decoration-none">Two lady went for jocking</a>
+                           </h4>
+                           <div class="d-flex position-relative font pt-3">
+                           <p class="ps-5 user">
+                            <i class="fa-regular fa-user rounded-circle"></i>                            
+                            <span>by Ram M</span></p>
+                            <div class="cute-content"></div>
+                            <div class="user1">
+                            <p class="ps-4">  
+                                <i class="fa-solid fa-calendar-days"></i>                  
+                                <time>August 2, 2018</time>
+                              </p>
+                            </div>
+                        </div>
+                        <div class="px-5 user2">
+                            <p> Cames cum sociis natoque penatibus
+                                 et magnis dis parturient montes, nascetur ridiculus mus.
+                                  Donec quam felis, ultricies nec, pellentesque eu, preti...
+                            </p>
+                          </div>
+                          <div class="ps-5">
+                            <button class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                               Read more
+                            </button>
+                          </div>
+                        </div>
+                       </div>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row flex-grow-1">
+                        <div class="col-lg-6 col-md-6  cute2  ">
+                            <!-- <img src="assets/img/blog-12.jpg" class="img-fluid" alt="dogs puppy"> -->
+                        </div>
+                        <div class="col-lg-6 col-md-6  pt-5 ps-5 delete-p">
+                            <div class="text-left ps-5">
+                            <h4 class="ps-5 ">
+                            <a href="#" class="text-decoration-none">Two lady went for jocking</a>
+                           </h4>
+                           <div class="d-flex position-relative font pt-3">
+                           <p class="ps-5 user">
+                            <i class="fa-regular fa-user rounded-circle"></i>                            
+                            <span>by Ram M</span></p>
+                            <div class="cute-content"></div>
+                            <div class="user1">
+                            <p class="ps-4">  
+                                <i class="fa-solid fa-calendar-days"></i>                  
+                                <time>August 2, 2018</time>
+                              </p>
+                            </div>
+                        </div>
+                        <div class="px-5 user2">
+                            <p> Tedes yum deriis juyoque gytatibus ot
+                                 hytnis ous iouturient montes, tyucetur
+                                  ridiculus mus. Donec quam felis, ultricies nec, 
+                              pellentesque eu, preti...    
+                            </p>
+                          </div>
+                          <div class="ps-5">
+                            <button class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                               Read more
+                            </button>
+                          </div>
+                        </div>
+                       </div>
+                        </div>
+                  </div>
+                </div>
+                
+                    <div class="control">
+
+                <button class="carousel-control-prev control  opacity-100 " type="button" data-bs-target="#carouselExample22" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next  opacity-100" type="button" data-bs-target="#carouselExample22" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+              </div>
+        </section>
+
+        <section class="mt-5 pet-care ">
+            <div class="container-fluid">
+         <div class="row w-100 text-center pb-5">
+            <div class="col-lg-5 col-md-12 col-sm-12 px-4 py-5 mt-4 px-5">
+                <h4 class="pb-4">Pet Care</h4>
+                <h6 class="pb-4">We are a research-oriented organization. Our
+                     goal is to provide every individual with special
+                      needs the product that fulfills his yearning.</h6>
+                      <p class="px-3">Lorem ipsum dolor sit amet,
+                         consectetur adipiscing elit, sed do eiusmod tempor 
+                         incididunt ut labore et dolore magna aliqua.
+                          Ut enim ad minim veniam, quis nostrud exercitation
+                           ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate 
+                            id est laborum. Ius ferri velit sanctus cu, 
+                            sed at soleat accusata. Dictas prompta et
+                             Ut placerat legendos interpre.Donec vitae 
+                             sapien ut libero venenatis faucibus
+                        . Nullam quis ante Etiam sit amet orci eget</p>
+                        <div class="ps-5">
+                            <button class="btn-add rounded-pill bg-main-color text-white border-0 px-4 py-1 ">
+                               More about us
+                            </button>
+            </div>
+         </div>
+         <div class="col-lg-7 col-md-12 col-sm-12 pt-4">
+            <div class="row g-3 ">
+                <div class="col-lg-6 col-md-6 col-sm-12  ">
+                    <div class="flip-container">
+                    <div class="flipper ">
+                    <div class=" front w-25">
+                  <img src="assets/img/img-11_770x.jpg" class="" alt=" running ball">
+                </div>
+                <div class="back d-flex flex-column justify-content-center ">
+                    <h6 class="pb-3">Bulldog<br>Wrinkled Face</h6>
+                    <a href="#" class="text-decoration-none text-white">Read More</a>
+                </div>
+                </div>
+                </div>
+            </div>
+                <div class="col-lg-6 col-md-6 col-sm-12"> 
+                    <div class="flip-container">
+                        <div class="flipper ">
+                        <div class=" front w-25">
+                      <img src="assets/img/img-10_770x.jpg" class="" alt=" birds">
+                    </div>
+                    <div class="back d-flex flex-column justify-content-center ">
+                        <h6 class="pb-3">Love Birds <br> Wonderful Pets</h6> 
+                         <a href="#" class="text-decoration-none text-white">Read More</a>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="row g-3 pt-4">
+                <div class="col-lg-6 col-md-6 col-sm-12  ">
+                    <div class="flip-container">
+                    <div class="flipper ">
+                    <div class=" front w-25">
+                  <img src="assets/img/img-8_770x.jpg" class="" alt=" running ball">
+                </div>
+                <div class="back d-flex flex-column justify-content-center ">
+                    <h6 class="pb-3">Bengal Cat<br> Strong &amp; Active</h6>
+                    <a href="#" class="text-decoration-none text-white">Read More</a>
+                </div>
+                </div>
+                </div>
+            </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 "> 
+                    <div class="flip-container">
+                        <div class="flipper ">
+                        <div class=" front w-25">
+                      <img src="assets/img/img-9_770x.jpg" class="" alt=" birds">
+                    </div>
+                    <div class="back d-flex flex-column justify-content-center ">
+                        <h6 class="pb-3">Puppy<br>Rest Feeding</h6>                         <a href="#" class="text-decoration-none text-white">Read More</a>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            
+            </div>
+         </div>
+        </div>
+       </div>
+        </section>
+
+
+        <section>
+        <div class="header1 text-center">
+            <div class="overlay1">            
+            <div class="header-content mt-2 pt-5 ">
+                <h4>Thus Spoke our Customers</h4>
+
+                <div id="carouselExampleIndicators" class="carousel slide">
+                   
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="pt-5 mt-2">
+                        <div class="">
+                            <p class="para d-flex pt-2">Quis ipsum suspendisse ultrices gravida dictum.
+                                 Ut placerat orci nulla pellentesque dignissim.
+                                  <br>Gravida rutrum quisque non
+                                 tellus orci ac auctor augue. Sit amet consectetur
+                                  adipiscing elit ut <br>aliquam purus.</p>
+                        </div>
+                        <div class="major pt-2">
+                            <cite><i class="pe-2">Penelope</i>
+                                <span>Developer</span></cite>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="pt-5 mt-2">
+                            <div class="">
+                                <p class="para d-flex pt-2">Vel elit scelerisque mauris
+                                     pellentesque pulvinar pellentesque habitant. Posuere morbi
+                                      leo urna molestie at elementum eu. Risus sed vulputate odio ut.
+                                     Volutpat lacus laoreet non curabitur gravida arcu ac tortor.</p>
+                            </div>
+                            <div class="major pt-2">
+                                <cite><i>Heather Boris</i>
+                                    <span>Supporter</span></cite>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="pt-5 mt-2">
+                            <div class="">
+                                <p class="para d-flex pt-2">Leo vel orci porta non.
+                                     Tristique senectus et netus et malesuada fames ac.
+                                      Tempus iaculis urna id volutpat lacus. Elit duis tristique 
+                                      sollicitudin nibh sit amet. 
+                                    Nisl vel pretium lectus quam. Pellentesque nec nam aliquam.</p>
+                            </div>
+                            <div class="major pt-2">
+                                <cite><i>Erica</i>
+                                <span>Designer</span></cite>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="pt-5 mt-2">
+                            <div class="">
+                                <p class="para d-flex pt-2">Porta lorem mollis aliquam ut porttitor 
+                                    leo a diam. Urna duis convallis convallis tellus. In egestas 
+                                    erat imperdiet sed euismod. 
+                                    Pulvinar neque laoreet suspendisse interdum 
+                                    consectetur libero id faucibus.</p>
+                            </div>
+                            <div class="major pt-2">
+                                <cite><i>Jasmine</i>
+                                <span>Testing</span></cite>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="pt-5 mt-2">
+                            <div class="">
+                                <p class="para d-flex pt-2">Bibendum est ultricies integer quis auctor
+                                    . Magna etiam tempor orci eu lobortis elementum nibh. Faucibus
+                                     nisl tincidunt eget nullam. Risus in hendrerit gravida rutrum quisque non tellus.
+                                     Ultricies lacus sed turpis tincidunt id.</p>
+                            </div>
+                            <div class="major pt-2">
+                                <cite><i>Yvonne</i>
+                                    <span>Designer</span></cite>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="pt-5 mt-2">
+                            <div class="">
+                                <p class="para d-flex pt-2">Sed turpis tincidunt id aliquet risus. 
+                                    Tellus orci ac auctor augue mauris augue neque gravida in. 
+                                    Molestie at elementum eu facilisis. Viverra justo nec ultrices dui sapien eget mi proin sed.
+                                     Quisque sagittis purus sit amet. Nulla malesuada pellentesque elit.</p>
+                            </div>
+                            <div class="major pt-2">
+                                <cite><i>Madelaine</i>
+                                <span>PSD Designer</span></cite>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="carousel-indicators position-static mt-5">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                            <img src="assets/img/team-2_3768b6d5-586e-471d-8d1b-7e81e3e50440_180x.jpg" class="img-fluid" alt="woman">
+                        </button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+                            <img src="assets/img/img-14_b40d7dfb-ac8a-4440-881a-5c7f6addeeb5_180x.jpg" class="img-fluid" alt="woman">
+    
+                        </button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+                            <img src="assets/img/img-15_67024916-1d22-4e13-aade-f64ec04c420e_180x.jpg" class="img-fluid" alt="woman">
+                        </button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
+                            <img src="assets/img/img-13_bccd86e2-3df4-4117-9c92-06efbb6f0a73_180x.jpg" class="img-fluid" alt="woman">
+                        </button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5">
+                            <img src="assets/img/team-4_566319e3-d298-4a81-9fc3-2d1b09f2175a_180x.jpg" class="img-fluid" alt="woman">
+                        </button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6">
+                            <img src="assets/img/team-3_a36a45b9-ee38-4b7e-ae78-7b13a833b241_180x.jpg" class="img-fluid" alt="woman">
+                        </button>
+                      </div>
+                  </div>
+                 
+           
+            </div>
+        </div>
+        </div>
+    </section>
+
+     <section>
+        <div class="container logo mt-5 pt-5">
+        <div id="carouselExample4" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active ">
+                <div class="row ">
+                    <div class="col-lg-3 col-md-6 logo-content">
+                        <a href="">
+                       <img src="assets/img/Logo-2_400x400.png"  alt="helsenki logo">
+                    </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 logo-content">
+                        <img src="assets/img/Logo-1_400x400.png"  alt="hagen logo">
+
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block  logo-content">
+                        <img src="assets/img/Logo-3_400x400.png"  alt="sterling logo">
+
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block  logo-content">
+                        <img src="assets/img/Logo-4_400x400.png"  alt="manifesto logo">
+                    </div>
+            </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row ">
+                    <div class="col-lg-3 col-md-6 logo-content">
+                        <a href="">
+                       <img src="assets/img/Logo-6_400x400.png"  alt="newyork logo">
+                    </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 logo-content">
+                        <img src="assets/img/Logo-5_400x400.png"  alt="lr logo laurie reynolds">
+
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block  logo-content">
+                        <img src="assets/img/Logo-7_400x400.png"  alt="north time group logo">
+
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block  logo-content">
+                        <img src="assets/img/Logo-8_400x400.png"  alt="east look logo">
+                    </div>
+            </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center pt-5 ">
+            <button class="border-0 bg-transparent " type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon btn-add" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="border-0 bg-transparent" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
+              <span class="carousel-control-next-icon btn-add" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+          </div>
+        </div>
+     </section>
+
+     <section>
+        <div class="heading text-center pt-5 mt-5 w-100">
+            <p>Sit amet consectetur adipiscing elit ut aliquam purus sit amet
+            </p>
+            <div class="back-img1 w-100  pt-1 ">
+                <h4>Newsletter</h4>
+            </div>
+        </div>
+
+        <div class="container">
+        <div class="contact-input text-center">	
+            <input class="form-control rounded-pill" type="text" value="" aria-label="" >
+            <button type="submit" class="dt-sc-btn mt-3 mb-5 border-0 rounded-pill bg-main-color text-white px-4 py-2 btn-submit " name="subscribe" value=""><span>Subscribe</span></button>   
+          </div>
+
+          <div class="row mt-5 mb-5 pb-5">
+            <div class="col-md-3  d-flex border-end">
+                <div class="icon-footer pe-2 pt-1">
+                    <a href=" ">
+                        <i class="fa-solid fa-truck fa-flip-horizontal"></i>
+                                    </a>
+                </div>
+                <div class="footer-cont">
+                    <h5 class="">Money Back Guarantee</h5>
+                    <p class="pt-2"> With a 30 day</p>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex border-end ps-4">
+                <div class="icon-footer pe-2 pt-1">
+                    <a href=" ">
+                        <i class="fa fa-certificate"></i>                                    </a>
+                </div>
+                <div class="footer-cont">
+                    <h5 class="">
+                        Best Online Support</h5>
+                    <p class="pt-2"> Hours: 8AM - 11PM</p>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex border-end ps-4">
+                <div class="icon-footer pe-2 pt-1">
+                    <a href=" ">
+                        <i class="fa fa-phone"></i>                                    </a>
+                </div>
+                <div class="footer-cont">
+                    <h5 class=""> Win $100 to Shop</h5>
+                    <p class="pt-2">Enter Now</p>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex ps-4 ">
+                <div class="icon-footer pe-2 pt-1">
+                    <a href=" ">
+                        <i class="fa fa-gift"></i>                                    </a>
+                </div>
+                <div class="footer-cont">
+                    <h5 class="">Free World Delivery</h5>
+                    <p class="pt-2"> Order Over $100</p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+     </section>
+
+     <section>
+        <div >
+                <div class="footer-content text-center position-relative">
+                    <img src="assets/img/footer-logo_x100@2x.png" alt="logo">
+
+                    <ul class="footer_menu pt-5 d-flex justify-content-center">
+    
+                        <li ><a href="#">About Us</a></li>
+                        
+                        <li class="ps-3"><a href="#">Terms &amp; Condition</a></li>
+                        
+                        <li class="ps-3"><a href="#">Privacy Policy</a></li>
+                        
+                        <li class="ps-4"><a href="#">Press Release</a></li>
+                        
+                      </ul>
+
+                      <div class="footer position-absolute bottom-0 start-0 end-0 ">
+
+                        <div class="d-flex justify-content-around align-items-center pos  ">
+                            <div>
+                                <i class="fa-regular fa-copyright text-white"></i>
+                                <span class="text-white"> 2023 Bowie (password: buddha)</span>
+                            </div>
+                            <div class="footer-icons pt-4">
+                                <ul class="d-flex">
+    
+                                    <li>
+                                      <a class="">
+                                        <i class="fa-brands fa-twitter"></i>
+                                                                          </a>
+                                    </li>
+                                    <li>
+                                      <a class="ps-3">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                                                          </a>
+                                    </li>
+
+                                    <li>
+                                      <a class="ps-3">
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                      </a>
+                                    </li>   
+                                    <li>
+                                    <a class="ps-3">
+                                        <i class="fa-brands fa-tumblr"></i>
+                                    </a>
+                                    </li>
+                                  </ul>
+                            </div>
+                            <div>
+                                <ul class="d-flex pt-4 edit">
+    
+                                    <li>
+                                        <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path>
+                                            <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+                                            <path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 
+                                            0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0
+                                             .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 
+                                             .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 
+                                             0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1
+                                              .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1
+                                               0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path></svg>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-master"><title id="pi-master">Mastercard</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path>
+                                            <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+                                            <circle fill="#EB001B" cx="15" cy="12" r="7"></circle><circle fill="#F79E1B" cx="23" cy="12" r="7"></circle>
+                                            <path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"></path></svg>
+                                    </li>
+
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-american_express"><title id="pi-american_express">American Express</title><g fill="none">
+                                            <path fill="#000" d="M35,0 L3,0 C1.3,0 0,1.3 0,3 L0,21 C0,22.7 1.4,24 3,24 L35,24 C36.7,24 38,22.7 38,21 L38,3 C38,1.3 36.6,0 35,0 Z" opacity=".07"></path>
+                                            <path fill="#006FCF" d="M35,1 C36.1,1 37,1.9 37,3 L37,21 C37,22.1 36.1,23 35,23 L3,23 C1.9,23 1,22.1 1,21 L1,3 C1,1.9 1.9,1 3,1 L35,1"></path>
+                                            <path fill="#FFF" d="M8.971,10.268 L9.745,12.144 L8.203,12.144 L8.971,10.268 Z M25.046,10.346 L22.069,10.346 L22.069,11.173 L24.998,11.173 L24.998,12.412 L22.075,12.412 L22.075,13.334 L25.052,13.334 L25.052,14.073
+                                             L27.129,11.828 L25.052,9.488 L25.046,10.346 L25.046,10.346 Z M10.983,8.006 L14.978,8.006 L15.865,9.941 L16.687,
+                                            8 L27.057,8 L28.135,9.19 L29.25,8 L34.013,8 L30.494,11.852 L33.977,15.68 L29.143,15.68 L28.065,14.49 L26.94,15.68 L10.03,15.68 
+                                            L9.536,14.49 L8.406,14.49 L7.911,15.68 
+                                            L4,15.68 L7.286,8 L10.716,8 L10.983,8.006 Z M19.646,9.084 L17.407,9.084 L15.907,12.62 L14.282,9.084 
+                                            L12.06,9.084 L12.06,13.894 L10,9.084 L8.007,9.084 L5.625,14.596 L7.18,14.596 L7.674,13.406 L10.27,13.406 L10.764,14.596 L13.484,14.596 L13.484,10.661 L15.235,14.602 L16.425,14.602 L18.165,10.673 L18.165,14.603 L19.623,14.603 L19.647,9.083 L19.646,9.084 Z M28.986,11.852 L31.517,9.084 
+                                            L29.695,9.084 L28.094,10.81 L26.546,9.084 L20.652,9.084 L20.652,14.602 L26.462,14.602 L28.076,12.864 L29.624,14.602 L31.499,14.602 L28.987,11.852 L28.986,11.852 Z"></path></g></svg>
+                                    </li>   
+                                    <li>
+                                        <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal"><title id="pi-paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path>
+                                            <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"></path>
+                                            <path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"></path><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1
+                                             0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"></path></svg>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-diners_club"><title id="pi-diners_club">Diners Club</title>
+                                            <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+                                            <path d="M12 12v3.7c0 .3-.2.3-.5.2-1.9-.8-3-3.3-2.3-5.4.4-1.1 1.2-2 2.3-2.4.4-.2.5-.1.5.2V12zm2 0V8.3c0-.3 0-.3.3-.2 2.1.8 3.2 3.3 2.4 5.4-.4 1.1-1.2 2-2.3 2.4-.4.2-.4.1-.4-.2V12zm7.2-7H13c3.8 0 6.8 3.1 6.8 7s-3 7-6.8 7h8.2c3.8 0 6.8-3.1 6.8-7s-3-7-6.8-7z" fill="#3086C8"></path></svg>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 38 24" width="38" height="24" role="img" aria-labelledby="pi-discover" fill="none" xmlns="http://www.w3.org/2000/svg"><title id="pi-discover">Discover</title>
+                                            <path fill="#000" opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path>
+                                            <path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32z" fill="#fff"></path><path d="M3.57 7.16H2v5.5h1.57c.83 0 1.43-.2 1.96-.63.63-.52
+                                             1-1.3 1-2.11-.01-1.63-1.22-2.76-2.96-2.76zm1.26 4.14c-.34.3-.77.44-1.47.44h-.29V8.1h.29c.69 0 1.11.12 1.47.44.37.33.59.84.59 1.37 0 .53-.22 1.06-.59 1.39zm2.19-4.14h1.07v5.5H7.02v-5.5zm3.69
+                                              2.11c-.64-.24-.83-.4-.83-.69 0-.35.34-.61.8-.61.32 0 .59.13.86.45l.56-.73c-.46-.4-1.01-.61-1.62-.61-.97 0-1.72.68-1.72 1.58 0 .76.35 1.15 1.35 1.51.42.15.63.25.74.31.21.14.32.34.32.57 0
+                                               .45-.35.78-.83.78-.51 0-.92-.26-1.17-.73l-.69.67c.49.73 1.09 1.05 1.9 1.05 1.11 0 1.9-.74 1.9-1.81.02-.89-.35-1.29-1.57-1.74zm1.92.65c0 1.62 1.27 2.87 2.9 2.87.46 0 .86-.09 1.34-.32v-1.26c-.43.43-.81.6-1.29.6-1.08 0-1.85-.78-1.85-1.9
+                                                0-1.06.79-1.89 1.8-1.89.51 0 .9.18 1.34.62V7.38c-.47-.24-.86-.34-1.32-.34-1.61 0-2.92 1.28-2.92 2.88zm12.76.94l-1.47-3.7h-1.17l2.33 5.64h.58l2.37-5.64h-1.16l-1.48 3.7zm3.13 1.8h3.04v-.93h-1.97v-1.48h1.9v-.93h-1.9V8.1h1.97v-.94h-3.04v5.5zm7.29-3.87c0-1.03-.71-1.62-1.95-1.62h-1.59v5.5h1.07v-2.21h.14l1.48
+                                                 2.21h1.32l-1.73-2.32c.81-.17 1.26-.72 1.26-1.56zm-2.16.91h-.31V8.03h.33c.67 0 1.03.28 1.03.82 0 .55-.36.85-1.05.85z" fill="#231F20"></path>
+                                                 <path d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint0_linear)"></path><path opacity=".65" d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint1_linear)"></path>
+                                                 <path d="M36.57 7.506c0-.1-.07-.15-.18-.15h-.16v.48h.12v-.19l.14.19h.14l-.16-.2c.06-.01.1-.06.1-.13zm-.2.07h-.02v-.13h.02c.06 0 .09.02.09.06 0 .05-.03.07-.09.07z" fill="#231F20"></path><path d="M36.41 7.176c-.23 0-.42.19-.42.42 0 .23.19.42.42.42.23 0 .42-.19.42-.42 0-.23-.19-.42-.42-.42zm0 .77c-.18 0-.34-.15-.34-.35 0-.19.15-.35.34-.35.18 0 .33.16.33.35 0 .19-.15.35-.33.35z" fill="#231F20"></path><path d="M37 12.984S27.09 19.873 8.976 23h26.023a2 2 0 002-1.984l.024-3.02L37 12.985z" fill="#F48120"></path><defs><linearGradient id="pi-paint0_linear" x1="21.657" y1="12.275" x2="19.632" y2="9.104" gradientUnits="userSpaceOnUse"><stop stop-color="#F89F20"></stop><stop offset=".25" stop-color="#F79A20"></stop><stop offset=".533" stop-color="#F68D20"></stop><stop offset=".62" stop-color="#F58720"></stop><stop offset=".723" stop-color="#F48120"></stop><stop offset="1" stop-color="#F37521"></stop></linearGradient><linearGradient id="pi-paint1_linear" x1="21.338" y1="12.232" x2="18.378" y2="6.446" gradientUnits="userSpaceOnUse"><stop stop-color="#F58720"></stop><stop offset=".359" stop-color="#E16F27"></stop><stop offset=".703" stop-color="#D4602C"></stop><stop offset=".982" stop-color="#D05B2E"></stop></linearGradient></defs></svg>
+                                    </li>
+                                  </ul>
+
+                            </div>
+
+                        </div>
+
+
+                      </div>
+
+                </div>
+        </div>
+     </section>
+
+                <script src="vendor/bootstarp/bootstrap.bundle.min.js"></script>
+                <script src="assets/js/main.js"></script>
+            </body>
+
+        </htm
